@@ -5,7 +5,7 @@ namespace Microsservices.Data
 {
     public class CatalogContextSeed
     {
-        public static void SeedData(IMongoCollection<Products> productCollection)
+        public static void SeedData(IMongoCollection<Product> productCollection)
         {
             bool existProduct = productCollection.Find(p => true).Any();
 
@@ -15,11 +15,11 @@ namespace Microsservices.Data
             }
         }
 
-        private static IEnumerable<Products> GetMyProducts()
+        private static IEnumerable<Product> GetMyProducts()
         {
-            return new List<Products>
+            return new List<Product>
             {
-                new Products
+                new Product
                 {
                     Id = 1,
                     Name = "Mouse Gamer RGB",
@@ -28,7 +28,7 @@ namespace Microsservices.Data
                     Image = "mouse.png",
                     Price = 199.90m
                 },
-                new Products
+                new Product
                 {
                     Id = 2,
                     Name = "Teclado Mecânico",
@@ -37,7 +37,7 @@ namespace Microsservices.Data
                     Image = "teclado.png",
                     Price = 349.99m
                 },
-                new Products
+                new Product
                 {
                     Id = 3,
                     Name = "Monitor 27' 144Hz",
@@ -46,7 +46,7 @@ namespace Microsservices.Data
                     Image = "monitor.png",
                     Price = 1499.00m
                 },
-                new Products
+                new Product
                 {
                     Id = 4,
                     Name = "Headset Gamer 7.1",
@@ -55,7 +55,7 @@ namespace Microsservices.Data
                     Image = "headset.png",
                     Price = 299.90m
                 },
-                new Products
+                new Product
                 {
                     Id = 5,
                     Name = "Placa de Vídeo RTX 4060",

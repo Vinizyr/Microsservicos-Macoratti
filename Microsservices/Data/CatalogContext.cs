@@ -11,11 +11,11 @@ namespace Microsservices.Data
             var client = new MongoClient(configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
             var database = client.GetDatabase(configuration.GetValue<string>("DatabaseSettings:DatabaseName"));
 
-            Products = database.GetCollection<Products>(configuration.GetValue<string>("DatabaseSettings:CollectionName"));
+            Products = database.GetCollection<Product>(configuration.GetValue<string>("DatabaseSettings:CollectionName"));
 
             CatalogContextSeed.SeedData(Products);
         }
 
-        public IMongoCollection<Products> Products { get; set; }
+        public IMongoCollection<Product> Products { get; set; }
     }
 }

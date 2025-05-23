@@ -5,6 +5,6 @@ namespace Microsservices.Data
 {
     public interface ICatalogContext
     {
-        IMongoCollection<Products> Products { get; }
+        IMongoCollection<Product> Products { get; }
     }
 }
