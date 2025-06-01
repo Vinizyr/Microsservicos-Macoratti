@@ -21,7 +21,7 @@ namespace Microsservices.Data
             {
                 new Product
                 {
-                    Id = 1,
+                    Id = "1",
                     Name = "Mouse Gamer RGB",
                     Category = "Periféricos",
                     Description = "Mouse gamer com 7 botões programáveis e iluminação RGB.",
@@ -30,7 +30,7 @@ namespace Microsservices.Data
                 },
                 new Product
                 {
-                    Id = 2,
+                    Id = "2",
                     Name = "Teclado Mecânico",
                     Category = "Periféricos",
                     Description = "Teclado mecânico com switches azuis e retroiluminação.",
@@ -39,7 +39,7 @@ namespace Microsservices.Data
                 },
                 new Product
                 {
-                    Id = 3,
+                    Id = "3",
                     Name = "Monitor 27' 144Hz",
                     Category = "Monitores",
                     Description = "Monitor gamer de 27 polegadas com taxa de atualização de 144Hz.",
@@ -48,7 +48,7 @@ namespace Microsservices.Data
                 },
                 new Product
                 {
-                    Id = 4,
+                    Id = "4",
                     Name = "Headset Gamer 7.1",
                     Category = "Periféricos",
                     Description = "Headset gamer com som surround 7.1 e cancelamento de ruído.",
@@ -57,7 +57,7 @@ namespace Microsservices.Data
                 },
                 new Product
                 {
-                    Id = 5,
+                    Id = "5",
                     Name = "Placa de Vídeo RTX 4060",
                     Category = "Hardware",
                     Description = "Placa de vídeo NVIDIA RTX 4060 com 8GB de memória GDDR6.",

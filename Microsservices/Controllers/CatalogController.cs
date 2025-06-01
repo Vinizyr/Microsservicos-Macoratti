@@ -23,7 +23,7 @@ namespace Microsservices.Controllers
             return Ok(await productRepository.GetProductsAsync());
         }
 
-        [HttpGet("id:lenght(24)", Name = "GetProduct")]
+        [HttpGet("id:length(24)", Name = "GetProduct")]
         [ProducesResponseType(404)]
         [ProducesResponseType(typeof(IEnumerable<Product>), 200)]
         public async Task<ActionResult<Product>> GetProductById(string id)
@@ -75,7 +75,7 @@ namespace Microsservices.Controllers
             return Ok(await productRepository.UpdateProduct(product));
         }
 
-        [HttpDelete("{id:lenght(24)}", Name = "DeleteProduct")]
+        [HttpDelete("{id:length(24)}", Name = "DeleteProduct")]
         [ProducesResponseType(typeof(Product), 200)]
         public async Task<IActionResult> DeleteProductById(string id)
         {
